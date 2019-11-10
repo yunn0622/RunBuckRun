@@ -4,27 +4,46 @@ using UnityEngine;
 
 public class Buck : MonoBehaviour
 {
-    Animator animator;
+    public float jumpForce = 2f;
+    public Transform onGround;
+    public float buckRadius;
+    public LayerMask groundLayer;
+    private bool isNotJumping;
+
+
     Rigidbody2D buckRigidBody;
-    float jumpForce = 10;
 
     void Start()
     {
         buckRigidBody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        //buckRigidBody.simulated = false;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        isNotJumping = Physics2D.OverlapCircle(onGround.position, buckRadius, groundLayer);
+        if (Input.GetKeyDown(KeyCode.Space) && isNotJumping)
         {
-            Jump();
+            //buckRigidBody.AddForce(Vector2.up * jumpForce);
+            buckRigidBody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
     }
 
-    void Jump()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        buckRigidBody.velocity = Vector2.up * jumpForce;
-    }
+        if (collision.gameObject.tag == "obstacle")
+        {
+            //die
+            buckRigidBody.simulated = false;
+            Debug.Log("game over");
+            //register a dead event
+            //play sound
+        }
 
+        if (collision.gameObject.tag == "score")
+        {
+            //score++
+            //play a sound
+        }
+    }
 }

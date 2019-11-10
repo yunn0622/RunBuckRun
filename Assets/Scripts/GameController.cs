@@ -1,48 +1,30 @@
-﻿ using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public float jumpForce = 2f;
-    public Transform onGround;
-    public float buckRadius;
-    public LayerMask groundLayer;
-    private bool isNotJumping;
-    
+    public float spawnTime = 2f;
+    public float spawnObstacle;
+    public float xSpread;
+    public GameObject[] obstacle;
+    public Transform spawnPosition;
 
-    Rigidbody2D buckRigidBody;
-
-    void Start()
+   void Start()
     {
-        buckRigidBody = GetComponent<Rigidbody2D>();
-        //buckRigidBody.simulated = false;
+        spawnTime = Random.Range(1, 5);
     }
 
     void Update()
     {
-        isNotJumping = Physics2D.OverlapCircle(onGround.position, buckRadius, groundLayer);
-        if (Input.GetKeyDown(KeyCode.Space) && isNotJumping)
-        {
-            //buckRigidBody.AddForce(Vector2.up * jumpForce);
-            buckRigidBody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-        }
+        if(Time.time > spawnObstacle)
+            SpawnObstacle();    
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    public void SpawnObstacle()
     {
-        if (collision.gameObject.tag == "obstacle")
-        {
-            //die
-            buckRigidBody.simulated = false;
-            //register a dead event
-            //play sound
-        }
-
-        if (collision.gameObject.tag == "score")
-        {
-            //score++
-            //play a sound
-        }
+        spawnObstacle = Time.time + Random.Range(1, 5);
+        int randomObstacle = Random.Range(0, obstacle.Length);
+        Instantiate(obstacle[randomObstacle], spawnPosition.position, Quaternion.identity);
     }
 }
