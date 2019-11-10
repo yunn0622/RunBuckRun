@@ -19,5 +19,8 @@ public class MoveClouds : MonoBehaviour
 
         if (transform.position.x < leftWayPointX)
             transform.position = new Vector2(rightWayPointX, transform.position.y);
+
+        if (transform.position.x < -7.5f)
+            Destroy(gameObject);
     }
 }

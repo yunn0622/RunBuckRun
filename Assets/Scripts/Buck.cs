@@ -36,14 +36,12 @@ public class Buck : MonoBehaviour
             //die
             buckRigidBody.simulated = false;
             Debug.Log("game over");
+            GameController.instance.BuckDead();
             //register a dead event
             //play sound
         }
 
-        if (collision.gameObject.tag == "score")
-        {
-            //score++
-            //play a sound
-        }
+
+
     }
 }

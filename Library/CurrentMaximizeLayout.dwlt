@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 616}
   m_MaxSize: {x: 14004, y: 18066}
   vertical: 0
-  controlID: 14601
+  controlID: 20573
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 286
+    y: 287
     width: 332
     height: 203
   m_ViewDataDictionary: {fileID: 0}
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 616}
   m_MaxSize: {x: 10002, y: 18066}
   vertical: 1
-  controlID: 14602
+  controlID: 20574
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 344}
   m_MaxSize: {x: 8006, y: 8044}
   vertical: 0
-  controlID: 14603
+  controlID: 20575
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 344}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 14604
+  controlID: 20576
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -229,15 +229,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 75
+    y: 76
     width: 332
     height: 192
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      scrollPos: {x: 0, y: 49}
+      m_SelectedIDs: f0310000
+      m_LastClickedID: 12784
       m_ExpandedIDs: 74fbffffd43100000c32000010320000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
   - {fileID: 12}
   - {fileID: 13}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 332
-    y: 75
+    y: 76
     width: 575
     height: 414
   m_ViewDataDictionary: {fileID: 0}
@@ -353,9 +353,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.102898255, y: 0.8403011, z: -75.433754}
+    m_Target: {x: 0.102898255, y: 0.9791886, z: -75.433754}
     speed: 2
-    m_Value: {x: 0.102898255, y: 0.8403011, z: -75.433754}
+    m_Value: {x: 0.102898255, y: 0.9791886, z: -75.433754}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -464,13 +464,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 332
-    y: 75
+    y: 76
     width: 575
     height: 414
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -151876
+  m_LastSelectedObjectID: 12784
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 508
+    y: 509
     width: 909
     height: 253
   m_ViewDataDictionary: {fileID: 0}
@@ -618,19 +618,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Artworks
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Artworks
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /CS583 project/cs583_f2019_2d_game_noh_yun_runbuckrun
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f82e0000
-    m_LastClickedID: 12024
+    m_SelectedIDs: b42d0000
+    m_LastClickedID: 11700
     m_ExpandedIDs: 000000002a2d0000342d0000ca2d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -684,10 +684,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: f0310000
+    m_LastClickedInstanceID: 12784
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000c82c0000523200003c34000000000000
+    m_ExpandedInstanceIDs: c6230000c82c0000523200003c340000000000004a2d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -789,7 +789,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 909
-    y: 75
+    y: 76
     width: 369
     height: 686
   m_ViewDataDictionary: {fileID: 0}
