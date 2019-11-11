@@ -15,7 +15,7 @@ public class Obstacles : MonoBehaviour
             transform.position.y);
         moveSpeed += Time.deltaTime * -0.2f;
 
-        
+
     }
 
 }

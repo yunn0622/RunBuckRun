@@ -23,11 +23,11 @@ public class GameController : MonoBehaviour
     {
         if (instance == null)
         {
-            DontDestroyOnLoad(this);
             instance = this;
         }
         else if (instance != this)
             Destroy(gameObject);
+
         Time.timeScale = 1;
         Panel_GameOver.gameObject.SetActive(false);
         scoreText.text = score.ToString() + "  Bucks";
