@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     public GameObject cloud, money;
     public GameObject Panel_GameOver;
     public Transform spawnPosition;
-    public Text scoreText;
+    public Text scoreText, totalScore;
     private float yPos;
     public float cloudSpawnTime;
     private int score = 0;
@@ -64,6 +64,7 @@ public class GameController : MonoBehaviour
     {
         score = score + 1;
         scoreText.text = score.ToString() + "  Bucks";
+        totalScore.text = score.ToString() + "  Bucks";
         //Destroy(gameObject);
         //gameObject.SetActive(false);
     }
@@ -76,6 +77,8 @@ public class GameController : MonoBehaviour
     }
 
 
+
+
     public void LoadMenuSecne()
     {  
         SceneManager.LoadScene(0);
@@ -83,7 +86,7 @@ public class GameController : MonoBehaviour
 
     public void Replay()
     {
-        //Time.timeScale = 1;
+        Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
 

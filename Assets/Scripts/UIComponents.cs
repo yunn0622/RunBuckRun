@@ -7,10 +7,13 @@ using UnityEngine.SceneManagement;
 public class UIComponents : MonoBehaviour
 {
     public GameObject Panel_Menu;
+    public GameObject Panel_Credits;
+
 
     public void Awake()
     {
         Panel_Menu.gameObject.SetActive(true);
+        Panel_Credits.gameObject.SetActive(false);
     }
 
     public void LoadGameScene()
@@ -21,6 +24,13 @@ public class UIComponents : MonoBehaviour
     public void LoadMenuSecne()
     {
         SceneManager.LoadScene(0);
+        Panel_Credits.gameObject.SetActive(false);
+
+    }
+
+    public void LoadCreditsPanel()
+    {
+        Panel_Credits.gameObject.SetActive(true);
     }
 
     public void QuitGame()
