@@ -7,7 +7,6 @@ public class GameController : MonoBehaviour
     public static GameController instance = null;
     public float spawnTime = 2f;
     public float spawnObstacle;
-    public float xSpread;
     public GameObject[] obstacle;
     public GameObject cloud, money;
     public GameObject Panel_GameOver;
@@ -23,7 +22,10 @@ public class GameController : MonoBehaviour
     public void Start()
     {
         if (instance == null)
+        {
+            DontDestroyOnLoad(this);
             instance = this;
+        }
         else if (instance != this)
             Destroy(gameObject);
         Time.timeScale = 1;
@@ -38,18 +40,20 @@ public class GameController : MonoBehaviour
             SpawnObjects();
         if (Time.time > cloudSpawnTime)
             SpawnCloud();
+
     }
 
     public void SpawnObjects()
     {
-        spawnObstacle = Time.time + Random.Range(1.0f, 4.0f);
+        spawnObstacle = Time.time + Random.Range(1.0f, 3.0f);
         int randomObstacle = Random.Range(0, obstacle.Length);
         Instantiate(obstacle[randomObstacle], spawnPosition.position, Quaternion.identity);
+
     }
 
     public void SpawnCloud()
     {
-        cloudSpawnTime = Time.time + Random.Range(3.0f, 4.0f);
+        cloudSpawnTime = Time.time + Random.Range(2.0f, 4.0f);
         yPos = Random.Range(2.0f, 4.0f);
         Instantiate(cloud, new Vector2(8.22f, yPos), Quaternion.identity);
     }

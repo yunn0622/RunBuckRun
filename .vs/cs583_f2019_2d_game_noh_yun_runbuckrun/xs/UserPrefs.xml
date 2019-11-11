@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{3C381B0E-A7DB-3AFC-9E39-8BC420BF91CF}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Obstacles.cs">
     <Files>
-      <File FileName="Assets/Scripts/Buck.cs" Line="46" Column="1" />
-      <File FileName="Assets/Scripts/MoveClouds.cs" Line="23" Column="40" />
-      <File FileName="Assets/Scripts/Obstacles.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/MoveClouds.cs" Line="16" Column="1" />
+      <File FileName="Assets/Scripts/Obstacles.cs" Line="16" Column="49" />
       <File FileName="Assets/Scripts/UIComponents.cs" Line="23" Column="6" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="47" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="28" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +12,7 @@
           <Node name="cs583_f2019_2d_game_noh_yun_runbuckrun" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="GameController.cs" selected="True" />
+                <Node name="Obstacles.cs" selected="True" />
               </Node>
             </Node>
           </Node>

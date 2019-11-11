@@ -2078,7 +2078,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTime: 2
   spawnObstacle: 1
-  xSpread: 0
   obstacle:
   - {fileID: 3996951418095667047}
   - {fileID: 1656447647}
@@ -2482,6 +2481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900678058572130601, guid: 34716f4187a5240faadabf1dd317535c,
+        type: 3}
+      propertyPath: m_AutoTiling
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34716f4187a5240faadabf1dd317535c, type: 3}
