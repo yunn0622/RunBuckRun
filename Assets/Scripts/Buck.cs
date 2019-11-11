@@ -35,18 +35,14 @@ public class Buck : MonoBehaviour
     {
         if (collision.gameObject.tag == "obstacle")
         {
-            //die
             buckRigidBody.simulated = false;
             Debug.Log("game over");
             GameController.instance.BuckDead();
-            //register a dead event
-            //play sound
         }
 
         if (collision.gameObject.tag == "score")
         {
             Debug.Log("score");
-            //Destroy(collision.gameObject);
             collision.gameObject.SetActive(false);
             GameController.instance.Score();
         }

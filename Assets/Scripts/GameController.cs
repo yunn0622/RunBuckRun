@@ -16,7 +16,6 @@ public class GameController : MonoBehaviour
     private float yPos;
     public float cloudSpawnTime;
     private int score = 0;
-    private bool gameStopped;
 
     public AudioSource scoreAudio;
     public AudioSource gameoverAudio;
@@ -45,7 +44,6 @@ public class GameController : MonoBehaviour
     {
         spawnObstacle = Time.time + Random.Range(1.0f, 4.0f);
         int randomObstacle = Random.Range(0, obstacle.Length);
-        //new GameObject obstacle[randomObstacle];
         Instantiate(obstacle[randomObstacle], spawnPosition.position, Quaternion.identity);
     }
 
@@ -59,7 +57,6 @@ public class GameController : MonoBehaviour
     public void BuckDead ()
     {
         Time.timeScale = 0;
-        gameStopped = true;
         LoadGameOverPanel();
         gameoverAudio.Play();
     }
@@ -72,15 +69,10 @@ public class GameController : MonoBehaviour
         scoreAudio.Play();
     }
 
-    
-
     public void LoadGameOverPanel()
     {
         Panel_GameOver.gameObject.SetActive(true);
     }
-
-
-
 
     public void LoadMenuSecne()
     {  
