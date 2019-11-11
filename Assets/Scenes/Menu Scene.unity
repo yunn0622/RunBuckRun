@@ -201,8 +201,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1121270368}
   m_HandleRect: {fileID: 1121270367}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.45936227
+  m_Value: 1.0000007
+  m_Size: 0.3067238
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2254,8 +2254,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.020000001}
   m_AnchorMax: {x: 0.93111116, y: 1}
-  m_AnchoredPosition: {x: 5.4624023, y: -210.2}
-  m_SizeDelta: {x: -10.925, y: 420.4}
+  m_AnchoredPosition: {x: 5.4624023, y: -400.45062}
+  m_SizeDelta: {x: -10.9, y: 800.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1744200284
 MonoBehaviour:
@@ -2338,6 +2338,15 @@ MonoBehaviour:
 
     Zero Rare (Levi Moore), Sound FX - Retro Pack, Retrieved from UnityAssetStore
 
+
+    <Code>
+
+
+    Alexander Zotov, How To Make Simple Dinosaur Run Game (T-Rex Chrome Game Clone)
+    For Android In Unity?, https://www.youtube.com/watch?v=zKG8gSrwbnQ
+
+
+    Renaissance Coders, Develop and Publish Flappy Bird in 3 Hours With Unity3D, https://www.youtube.com/watch?v=A-GkNM8M5p8
 
 '
 --- !u!222 &1744200285
