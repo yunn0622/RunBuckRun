@@ -67,7 +67,6 @@
     <Compile Include="Assets\Scripts\MoveClouds.cs" />
     <Compile Include="Assets\Scripts\Obstacles.cs" />
     <Compile Include="Assets\Scripts\UIComponents.cs" />
-    <Compile Include="Assets\Sounds\Zero Rare\Retro Sound Effects\Demo\Demo.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/CS583 project/cs583_f2019_2d_game_noh_yun_runbuckrun/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
