@@ -10,6 +10,8 @@ public class Buck : MonoBehaviour
     public LayerMask groundLayer;
     private bool isNotJumping;
 
+    public AudioSource jumpAudio;
+
 
     Rigidbody2D buckRigidBody;
 
@@ -25,6 +27,7 @@ public class Buck : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isNotJumping)
         {
             buckRigidBody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            jumpAudio.Play();
         }
     }
 
@@ -47,8 +50,6 @@ public class Buck : MonoBehaviour
             collision.gameObject.SetActive(false);
             GameController.instance.Score();
         }
-
-
 
     }
 }

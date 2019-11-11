@@ -18,6 +18,9 @@ public class GameController : MonoBehaviour
     private int score = 0;
     private bool gameStopped;
 
+    public AudioSource scoreAudio;
+    public AudioSource gameoverAudio;
+
     public void Start()
     {
         if (instance == null)
@@ -58,6 +61,7 @@ public class GameController : MonoBehaviour
         Time.timeScale = 0;
         gameStopped = true;
         LoadGameOverPanel();
+        gameoverAudio.Play();
     }
 
     public void Score ()
@@ -65,8 +69,7 @@ public class GameController : MonoBehaviour
         score = score + 1;
         scoreText.text = score.ToString() + "  Bucks";
         totalScore.text = score.ToString() + "  Bucks";
-        //Destroy(gameObject);
-        //gameObject.SetActive(false);
+        scoreAudio.Play();
     }
 
     
