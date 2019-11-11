@@ -41,6 +41,12 @@ public class Buck : MonoBehaviour
             //play sound
         }
 
+        if (collision.gameObject.tag == "score")
+        {
+            Debug.Log("score");
+            GameController.instance.Score();
+        }
+
 
 
     }

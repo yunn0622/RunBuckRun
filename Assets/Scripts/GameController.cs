@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -7,8 +8,9 @@ public class GameController : MonoBehaviour
     public float spawnObstacle;
     public float xSpread;
     public GameObject[] obstacle;
-    public GameObject cloud;
+    public GameObject cloud, money;
     public Transform spawnPosition;
+    public Text scoreText;
     private float yPos;
     public float cloudSpawnTime;
     private int score = 0;
@@ -20,7 +22,8 @@ public class GameController : MonoBehaviour
             instance = this;
         else if (instance != this)
             Destroy(gameObject);
-
+        //score = 0;
+        scoreText.text = score.ToString() + "  Bucks";
         spawnTime = Random.Range(1, 5);
     }
 
@@ -51,5 +54,13 @@ public class GameController : MonoBehaviour
         Time.timeScale = 0;
         gameStopped = true;
 
+    }
+
+    public void Score ()
+    {
+        score = score + 1;
+        scoreText.text = score.ToString() + "  Bucks";
+        //Destroy(gameObject);
+        //gameObject.SetActive(false);
     }
 }
