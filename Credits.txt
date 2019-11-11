@@ -1,0 +1,37 @@
+Credits
+
+Assets:
+
+<Artworks>
+
+Sky: Yun Noh
+
+Clouds: Yun Noh
+
+Ground: Yun Noh
+
+Money: Yun Noh
+
+Bush: Freepik, Retrieved from https://www.flaticon.com/free-icon/bush_1717601
+
+Deer: Ploaj, Adventure Time: Explore the Dungeon Because I Don't Know, Retrieved from https://www.spriters-resource.com/pc_computer/adventuretimeexplorethedungeonbecauseidontknow/sheet/67634/
+
+Replay icon: Vignesh Oviyan, Retrieved from https://www.flaticon.com/free-icon/replay_175689#term=replay&page=1&position=18
+
+Back icon: bqlqn, Retrieved from https://www.flaticon.com/free-icon/left-arrow_2223621#term=back&page=1&position=38
+
+Quit icon: Pixel perfect, Retrieved from https://www.flaticon.com/free-icon/remove_1828945#term=quit&page=1&position=3
+
+<Font>
+
+Yuji Oshimoto, 04b_30, Retrieved from https://www.dafont.com/04b-30.font
+
+<Sound>
+
+Zero Rare (Levi Moore), Sound FX - Retro Pack, Retrieved from UnityAssetStore
+
+<Code>
+
+Alexander Zotov, How To Make Simple Dinosaur Run Game (T-Rex Chrome Game Clone) For Android In Unity?, https://www.youtube.com/watch?v=zKG8gSrwbnQ
+
+Renaissance Coders, Develop and Publish Flappy Bird in 3 Hours With Unity3D, https://www.youtube.com/watch?v=A-GkNM8M5p8
