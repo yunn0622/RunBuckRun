@@ -13,23 +13,22 @@ public class Buck : MonoBehaviour
 
     Rigidbody2D buckRigidBody;
 
-    void Start()
+    private void Start()
     {
         buckRigidBody = GetComponent<Rigidbody2D>();
-        //buckRigidBody.simulated = false;
+        buckRigidBody.simulated = true;
     }
 
-    void Update()
+    private void Update()
     {
         isNotJumping = Physics2D.OverlapCircle(onGround.position, buckRadius, groundLayer);
         if (Input.GetKeyDown(KeyCode.Space) && isNotJumping)
         {
-            //buckRigidBody.AddForce(Vector2.up * jumpForce);
             buckRigidBody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "obstacle")
         {
@@ -44,6 +43,8 @@ public class Buck : MonoBehaviour
         if (collision.gameObject.tag == "score")
         {
             Debug.Log("score");
+            //Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             GameController.instance.Score();
         }
 
