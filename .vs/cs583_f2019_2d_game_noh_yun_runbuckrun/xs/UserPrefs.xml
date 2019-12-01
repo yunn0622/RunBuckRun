@@ -1,10 +1,7 @@
 ﻿<Properties StartupConfiguration="{3C381B0E-A7DB-3AFC-9E39-8BC420BF91CF}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Obstacles.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
     <Files>
-      <File FileName="Assets/Scripts/MoveClouds.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/Obstacles.cs" Line="16" Column="49" />
-      <File FileName="Assets/Scripts/UIComponents.cs" Line="23" Column="6" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="28" Column="10" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="50" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +9,7 @@
           <Node name="cs583_f2019_2d_game_noh_yun_runbuckrun" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Obstacles.cs" selected="True" />
+                <Node name="GameController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +19,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="94a643ba-f134-4bb4-9f86-ac74f7d4aadb" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="53ef6491-a03b-4aec-a90e-1e088eac6066" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
